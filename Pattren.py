@@ -1,39 +1,100 @@
-# 1. Right-Angle Triangle
+#1) square star pattern
+
+# def square(n):
+    
+#     for i in range(n):
+#         for j in range(n):
+#             print("*",end=" ")
+#         print()
+# square([5])
+
+
+
+#2) right Traiangale pattern
+
+# def rightTrainangele(n):
+    
+#     for i in range(1,n+1):
+#         for j in range(i):
+#             print("*",end=" ")
+#         print()
+# rightTrainangele(5)
+
+
+# inverted Triangle
+
+# def invert(n):
+    
+#     for i in range(n,0,-1):
+#         for j in range(i):
+#             print("*",end=" ")
+#         print()
+# invert(5)
+
+
+
+#4)pyramid pattern
+
 # n = 5
-# for i in range(1, n+1):
-#     print("*" * i)
 
-# for i in range(1, 6):
-#     print("*" * i)
+# for i in range(1,n+1):
+#     print(" " * (n-i),end="")
+#     for i in range(i):
+#         print("* ",end="")
+    
+    
 
-
-
-# 2. Inverted Right Triangle
-
-
-# n = int(input("enter the n:"))
-
-# for i in range(n,0,-1):
-#     print("*" * i)
+  
+#5) reverse String 
 
 
-# 3. Pyramid Pattern
-# n = int(input("Enter number of rows: "))
+# def my_func(n):
+    
+#     rev = ""
+    
+#     for i in n:
+#         rev = i + rev
+#     return rev
+# print(my_func("hello"))  
+    
 
-# for i in range(n):
-#     spaces = " " * (n - i - 1)
-#     stars = "*" * (2 * i + 1)
-#     print(spaces + stars)
+#6) check palindrom
 
-##Q4) Diamond Pattern 
+# def palindrom(n):
+    
+#     rev = ""
+    
+#     for i in n:
+        
+#         rev = i + rev
+        
+#     if rev == n:
+#         print("True")
+#     else:
+#         print("false")
+# palindrom("noon")   
 
-# n = int(input("Enter number of rows: "))
 
-# # Upper part
-# for i in range(n):
-#     print(" " * (n - i - 1) + "*" * (2 * i + 1))
+#7) Write a program to print the Fibonacci series up to n terms.
 
-# # Lower part
-# for i in range(n - 2, -1, -1):
-#     print(" " * (n - i - 1) + "*" * (2 * i + 1))
+# def Fibonacci(n):
+#     a,b=0,1
+    
+#     for i in range(n):
+#         print(a,end=" ")
+        
+#         temp = a + b
+#         a = b
+#         b = temp
+# Fibonacci(10)
+        
+        
+
+        
+        
+
+
+    
+            
+
 
